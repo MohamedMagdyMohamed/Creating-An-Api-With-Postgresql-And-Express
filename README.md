@@ -1,8 +1,18 @@
 # Storefront Backend Project
 
+## Table of Contents
+- [Getting Started](#getting-started)
+- [Required Technologies](#required-technologies)
+- [Steps to Completion](#steps-to-completion)
+- [Dependancies](#dependancies)
+- [Install](#install)
+- [Run](#run)
+- [Scripts]($scripts)
+- [Usage](#usage)
+
 ## Getting Started
 
-This repo contains a basic Node and Express app to get you started in constructing an API. To get started, clone this repo and run `yarn` in your terminal at the project root.
+This repo (starter project taken from [Udacity](https://github.com/udacity/nd0067-c2-creating-an-api-with-postgresql-and-express-project-starter)) contains a basic Node and Express app to get you started in constructing an API. To get started, clone this repo and run `npm` in your terminal at the project root.
 
 ## Required Technologies
 Your application must make use of the following libraries:
@@ -52,3 +62,30 @@ Add JWT functionality as shown in the course. Make sure that JWTs are required f
 Before submitting, make sure that your project is complete with a `README.md`. Your `README.md` must include instructions for setting up and running your project including how you setup, run, and connect to your database. 
 
 Before submitting your project, spin it up and test each endpoint. If each one responds with data that matches the data shapes from the `REQUIREMENTS.md`, it is ready for submission!
+
+## Dependancies
+- Typescript.
+- JS Version: ES2015/ES6.
+- JS Standard: ESlint.
+- Node.
+- Express.
+- Nodemon.
+- Jasmine.
+
+## Install
+This project requires node packages like: (Typescript, Express, Eslint, Prettier, Express, and Dotenv) install them via `npm run install`.
+And also you need to install the postgress database, you can install it from their official website https://www.postgresql.org/ 
+
+## Run
+To run this project open the terminal in the directry of the file and run `npm run start`
+
+## Scripts
+1. start: `npm run start`
+2. watch: `npm run watch`
+3. test: `npm run test`
+4. tsc: `npm run tsc`
+
+## Usage
+This project have enpoint
+
+http://localhost:3000
