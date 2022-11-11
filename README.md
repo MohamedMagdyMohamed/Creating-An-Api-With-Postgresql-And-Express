@@ -5,6 +5,7 @@
 - [Required Technologies](#required-technologies)
 - [Steps to Completion](#steps-to-completion)
 - [Dependancies](#dependancies)
+- [Setup](#setup)
 - [Install](#install)
 - [Run](#run)
 - [Scripts]($scripts)
@@ -71,6 +72,10 @@ Before submitting your project, spin it up and test each endpoint. If each one r
 - Express.
 - Nodemon.
 - Jasmine.
+
+## Setup
+### ENV
+The .env file is ignored for security reasons please check the .env.example file to create .env file
 
 ## Install
 - This project requires node packages like: (Typescript, Express, Eslint, Prettier, Express, and Dotenv) install them via `npm i`.
