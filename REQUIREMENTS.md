@@ -28,10 +28,10 @@ These are the notes from a meeting with the frontend developer that describe wha
 - [OPTIONAL] category
 
 #### User
-- id
-- firstName
-- lastName
-- password
+- id: SERIAL PRIMARY KEY
+- firstName: VARCHAR(100)
+- lastName: VARCHAR(100)
+- password: CHAR(60)
 
 #### Orders
 - id
