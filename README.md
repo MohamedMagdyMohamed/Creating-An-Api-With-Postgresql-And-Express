@@ -73,7 +73,7 @@ Before submitting your project, spin it up and test each endpoint. If each one r
 - Jasmine.
 
 ## Install
-This project requires node packages like: (Typescript, Express, Eslint, Prettier, Express, and Dotenv) install them via `npm run install`.
+This project requires node packages like: (Typescript, Express, Eslint, Prettier, Express, and Dotenv) install them via `npm i`.
 And also you need to install the postgress database, you can install it from their official website https://www.postgresql.org/ 
 
 ## Run
