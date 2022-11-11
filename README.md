@@ -77,6 +77,13 @@ Before submitting your project, spin it up and test each endpoint. If each one r
 ### ENV
 The .env file is ignored for security reasons please check the .env.example file to create .env file
 
+### Database
+You need to create two databases in your host `store_front_dev` and `store_front_test`
+To do this:
+1. Enter psql
+2. Run `CREATE DATABASE store_front_dev;`
+3. Run `CREATE DATABASE store_front_test;`
+
 ## Install
 - This project requires node packages like: (Typescript, Express, Eslint, Prettier, Express, and Dotenv) install them via `npm i`.
 - And also you need to install the postgress database, you can install it from their official website https://www.postgresql.org/ 
