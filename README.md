@@ -75,7 +75,7 @@ Before submitting your project, spin it up and test each endpoint. If each one r
 ## Install
 - This project requires node packages like: (Typescript, Express, Eslint, Prettier, Express, and Dotenv) install them via `npm i`.
 - And also you need to install the postgress database, you can install it from their official website https://www.postgresql.org/ 
-- Install also the db-migrate `npm install -g db-migrate`
+- Install also the db-migrate `npm install -g db-migrate` this to be install globally
 
 ## Run
 To run this project open the terminal in the directry of the file and run `npm run start`
