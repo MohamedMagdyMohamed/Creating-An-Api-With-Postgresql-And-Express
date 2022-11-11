@@ -33,9 +33,18 @@ These are the notes from a meeting with the frontend developer that describe wha
 - password: CHAR(60)
 
 #### Orders
-- id
-- id of each product in the order
-- quantity of each product in the order
-- user_id
-- status of order (active or complete)
+- id: SERIAL PRIMARY KEY
+- status: VARCHAR(10)
+- user_id: INTEGER NOT NULL
 
+This has a foreign key reference to the users tabel id column
+
+#### Order-Details
+- id: SERIAL PRIMARY KEY
+- quantity: INTEGER
+- order_id: INTEGER NOT NULL
+- product_id: INTEGER NOT NULL
+
+Has a foreign key reference to the orders tabel id column
+
+Has a foreign key reference to the products tabel id column
