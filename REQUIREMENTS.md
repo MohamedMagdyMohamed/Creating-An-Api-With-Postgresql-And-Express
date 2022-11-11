@@ -22,10 +22,9 @@ These are the notes from a meeting with the frontend developer that describe wha
 
 ## Data Shapes
 #### Product
--  id
-- name
-- price
-- [OPTIONAL] category
+- id: SERIAL PRIMARY KEY
+- name: VARCHAR(100)
+- price: FLOAT
 
 #### User
 - id: SERIAL PRIMARY KEY
