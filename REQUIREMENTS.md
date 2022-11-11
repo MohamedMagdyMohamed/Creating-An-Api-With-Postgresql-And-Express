@@ -36,6 +36,7 @@ These are the notes from a meeting with the frontend developer that describe wha
 - id: SERIAL PRIMARY KEY
 - status: VARCHAR(10)
 - user_id: INTEGER NOT NULL
+
 This has a foreign key reference to the users tabel id column
 
 #### Order-Details
@@ -43,5 +44,7 @@ This has a foreign key reference to the users tabel id column
 - quantity: INTEGER
 - order_id: INTEGER NOT NULL
 - product_id: INTEGER NOT NULL
+
 Has a foreign key reference to the orders tabel id column
+
 Has a foreign key reference to the products tabel id column
