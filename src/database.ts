@@ -1,13 +1,13 @@
 import dotenv from 'dotenv';
 import { Pool } from 'pg';
 
+// Init the dotenv
 dotenv.config();
 
 // get the env variables to be used to init the database
 const {
     ENV,
     DB_HOST,
-    DB_PORT,
     DB_NAME,
     DB_TEST_NAME,
     DB_USER,
@@ -21,7 +21,7 @@ let client: Pool = new Pool();
 if (ENV == 'test') {
   client = new Pool({
     host: DB_HOST,
-    database: DB_NAME,
+    database: DB_TEST_NAME,
     user: DB_USER,
     password: DB_PASS
   });
@@ -31,7 +31,7 @@ if (ENV == 'test') {
 if (ENV == 'dev') {
   client = new Pool({
     host: DB_HOST,
-    database: DB_TEST_NAME,
+    database: DB_NAME,
     user: DB_USER,
     password: DB_PASS
   });
