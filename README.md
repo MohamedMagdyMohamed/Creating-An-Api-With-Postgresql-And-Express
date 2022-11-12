@@ -90,7 +90,7 @@ To do this:
 - Install also the db-migrate `npm install -g db-migrate` this to be install globally
 
 ## Run
-To run this project open the terminal in the directry of the file and run `npm run start`
+To run this project open the terminal in the directry of the file and run `npm run watch`
 
 ## Scripts
 1. start: `npm run start`
