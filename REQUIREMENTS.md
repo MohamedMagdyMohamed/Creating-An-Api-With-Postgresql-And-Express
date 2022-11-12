@@ -14,7 +14,9 @@ These are the notes from a meeting with the frontend developer that describe wha
 #### Users
 - Index [token required]: GET (/users)
 - Show [token required]: GET (/users/:id)
-- Create N[token required]: POST (/users)
+- Create: POST (/users)
+- Delete [token required]: DELETE (/users/:id)
+- Login [token required]: POST (/users/login)
 
 #### Orders
 - Current Order by user (args: user id)[token required]
