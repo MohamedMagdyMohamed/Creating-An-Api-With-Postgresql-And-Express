@@ -12,9 +12,9 @@ These are the notes from a meeting with the frontend developer that describe wha
 - [OPTIONAL] Products by category (args: product category)
 
 #### Users
-- Index [token required]
-- Show [token required]
-- Create N[token required]
+- Index [token required]: GET (/users)
+- Show [token required]: GET (/users/:id)
+- Create N[token required]: POST (/users)
 
 #### Orders
 - Current Order by user (args: user id)[token required]
