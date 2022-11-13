@@ -1,7 +1,7 @@
 import { Product, ProductStore } from '../product';
 import Client from '../../database'
 
-const productStore = new ProductStore()
+const productStore = new ProductStore();
 
 const testProdcut = {
     id: 1,
