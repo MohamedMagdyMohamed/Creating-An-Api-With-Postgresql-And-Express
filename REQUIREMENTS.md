@@ -21,8 +21,18 @@ These are the notes from a meeting with the frontend developer that describe wha
 - Login [token required]: POST (/users/login)
 
 #### Orders
-- Current Order by user (args: user id)[token required]
+- Index [token required]: GET (/orders)
+- Show [token required]: GET (/orders/:id)
+- Create [token required]: POST (/orders)
+- Delete [token required]: DELETE (/orders/:id)
+- Current Order by user (args: user id)[token required]: GET (/orders/user/:id)
 - [OPTIONAL] Completed Orders by user (args: user id)[token required]
+
+#### OrderDetails
+- Index [token required]: GET (/order_details)
+- Show [token required]: GET (/order_details/:id)
+- Create [token required]: POST (/order_details)
+- Delete [token required]: DELETE (/order_details/:id)
 
 ## Data Shapes
 #### Product
