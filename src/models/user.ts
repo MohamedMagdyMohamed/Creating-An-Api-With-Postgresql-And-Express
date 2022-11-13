@@ -1,4 +1,4 @@
-import Client from '../database'
+import Client from '../database';
 import bcrypt from 'bcrypt';
 import dotenv from 'dotenv';
 
@@ -83,7 +83,7 @@ export class UserStore {
      * Delete specific user with its id
      * @returns Promise User or throw error
      */
-    async delete(id: number): Promise<User[]> {
+    async delete(id: number): Promise<User> {
         try {
             const connection = await Client.connect();
             const sql = 'DELETE FROM users WHERE id=($1)';
