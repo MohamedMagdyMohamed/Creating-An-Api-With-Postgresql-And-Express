@@ -48,6 +48,16 @@ const destroy = async (req: Request, res: Response) => {
         res.status(500).json(err);
     }
 }
+
+// CurrentOrderByUser route to get the current order by the user
+const currentOrderByUser = async (req: Request, res: Response) => {
+    try {
+        const order = await orderStore.currentOrderByUser(parseInt(req.params.id));
+        res.json(order);
+    } catch(err) {
+        res.status(500).json(err);
+    }
+}
   
 // All the orderRoutes are held in this variable to be exposed and used in the express
 const orderRoutes = (app: express.Application) => {
@@ -55,6 +65,7 @@ app.get('/orders', verifyToken, index);
 app.get('/orders/:id', verifyToken, show);
 app.post('/orders', verifyToken, create);
 app.delete('/orders/:id', verifyToken, destroy);
+app.get('/orders/user/:id', verifyToken, currentOrderByUser);
 }
   
 // Export the orderRoutes to be used in the express app

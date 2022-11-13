@@ -85,6 +85,14 @@ describe("Test orders api endpoint responses", (): void => {
         expect(response.status).toBe(200);
     });
 
+    // test currentOrderByUser order by id
+    it("currentOrderByUser gets the api endpoint to be 200 user orders", async (): Promise<void> => {
+        await userStore.create(testUser);
+        await orderStore.create(testOrder);
+        const response = await request.get("/orders/user/1").set('Authorization', `Bearer ${token}`);
+        expect(response.status).toBe(200);
+    });
+
     // delete orders table after each test
     afterEach(async () => {
         const connection = await Client.connect();
