@@ -72,6 +72,7 @@ Before submitting your project, spin it up and test each endpoint. If each one r
 - Express.
 - Nodemon.
 - Jasmine.
+- Postgres.
 
 ## Setup
 ### ENV
@@ -85,9 +86,9 @@ To do this:
 3. Run `CREATE DATABASE store_front_test;`
 
 ## Install
-- This project requires node packages like: (Typescript, Express, Eslint, Prettier, Express, and Dotenv) install them via `npm i`.
+- This project requires node packages like: (Typescript, Express, Postgres, and Dotenv) install them via `npm i`.
 - And also you need to install the postgress database, you can install it from their official website https://www.postgresql.org/ 
-- Install also the db-migrate `npm install -g db-migrate` this to be install globally
+- Install also the db-migrate `npm install -g db-migrate` this to be install globally then run `npm run db:up`
 
 ## Run
 To run this project open the terminal in the directry of the file and run `npm run watch`
@@ -96,9 +97,13 @@ To run this project open the terminal in the directry of the file and run `npm r
 1. start: `npm run start`
 2. watch: `npm run watch`
 3. test: `npm run test`
-4. tsc: `npm run tsc`
+4. testdb-up: `npm run testdb-up`
+5. testdb-down: `npm run testdb-down`
+6. tsc: `npm run tsc`
+7. db:up: `npm run db:up`
+8. db:down: `npm run db:down`
 
 ## Usage
-This project have enpoint
+This project have enpoints, please check the REQUIREMENTS.md file
 
-http://localhost:3000
+baseUrl: http://localhost:3000
