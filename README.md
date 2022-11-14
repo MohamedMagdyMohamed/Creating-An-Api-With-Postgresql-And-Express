@@ -93,6 +93,8 @@ To do this:
 ## Run
 To run this project open the terminal in the directry of the file and run `npm run watch`
 
+To run test run `npm run test`
+
 ## Scripts
 1. start: `npm run start`
 2. watch: `npm run watch`
