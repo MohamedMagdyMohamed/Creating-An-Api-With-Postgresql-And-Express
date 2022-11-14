@@ -14,6 +14,8 @@ const {
     DB_PASS   
 } = process.env;
 
+console.log(`Connected to ${ENV} database`);
+
 // client of the database
 let client: Pool = new Pool();
 

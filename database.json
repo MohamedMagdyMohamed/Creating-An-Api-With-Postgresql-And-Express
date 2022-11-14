@@ -12,6 +12,9 @@
         },
         "password": {
             "ENV": "DB_PASS"
+        },
+        "port": {
+            "ENV": "DB_PORT"
         }
     },
     "test": {
@@ -27,6 +30,10 @@
         },
         "password": {
             "ENV": "DB_PASS"
+        },
+        "port": {
+            "ENV": "DB_PORT"
         }
-    }
+    },
+    "sql-file": true
 }
